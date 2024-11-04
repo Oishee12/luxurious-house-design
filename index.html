@@ -10,32 +10,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind customize cdn -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
       <!-- daisyUI cdn -->
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
+      <!-- icon cdn -->
+      <script src="https://kit.fontawesome.com/c856a51426.js" crossorigin="anonymous"></script>
     <!-- font style -->
      <style>
         .manrope-font{
         font-family: "Manrope", sans-serif;
+
+        .primary-color{
+            color: rgb(171, 239, 95);
+        }
+        .bg-primary-color{
+            background-color: rgb(171, 239, 95);
+        }
      }
      </style>
 </head>
-<body class="manrope-font">
+<body class="manrope-font ">
     <!-- header -->
-     <header>
-
+     <header class="bg-gradient-to-b from-gray-200 to-white-50 ">
+        <!-- navbar -->
+         <nav class="container mx-auto">
+            <div class="navbar flex justify-between">
+                <div class="navbar-start">
+                  <!-- icon -->
+                  <div class="flex justify-between items-center gap-2 ">
+                    <div class="rounded-full bg-primary-color w-8 h-8 -rotate-45 text-lg flex justify-center items-center"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div><a class="text-3xl font-light ">Rinterio</a></div>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="gap-6 menu-horizontal px-1">
+                    <li class="text-[#737373] font-extralight"><a>Home</a></li>
+                    <li class="text-[#737373] font-extralight"><a>Services</a></li>
+                    <li class="text-[#737373] font-extralight"><a>Portfolio</a></li>
+                    <li class="text-[#737373] font-extralight"><a>Blogs</a></li>
+                    <li class="text-[#737373] font-extralight"><a>Contact Us</a></li>
+                    <li>
+                  </ul>
+                </div>
+                  <div class="hidden lg:flex navbar-end gap-3">
+                    <div><div class="rounded-full bg-white w-10 h-10 text-lg flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></div></div>
+                    <div><div class="rounded-full bg-white w-10 h-10 text-lg flex justify-center items-center"><i class="fa-solid fa-cart-shopping"></i></div></div>
+                    <div>
+                      <button class="w-52 h-11 bg-primary-color rounded-3xl">
+                          <div class="flex justify-around items-center ">
+                              <div class="flex justify-center items-center">Book Consult
+                              </div>
+                              <div class="rounded-full bg-black w-8 h-8 -rotate-45 text-lg text-white flex justify-center items-center"><i class="fa-solid fa-arrow-right"></i>
+                              </div>
+                      </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class=" bg-white border rounded-full text-3xl h-12 w-12 justify-center items-center lg:hidden">
+                    <div class="p-2">
+                      <i class="fa-solid fa-list-ul"></i>
+                    </div>
+                  </div>
+            </div>
+            
+         </nav>
      </header>
 
      <!-- main -->
