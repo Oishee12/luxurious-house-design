@@ -1,89 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxurious House Design</title>
-    <!-- font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-      <!-- daisyUI cdn -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-      <script src="https://cdn.tailwindcss.com"></script>
-      <!-- icon cdn -->
-      <script src="https://kit.fontawesome.com/c856a51426.js" crossorigin="anonymous"></script>
-    <!-- font style -->
-     <style>
-        .manrope-font{
-        font-family: "Manrope", sans-serif;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxurious House Design</title>
+  <!-- font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- icon cdn -->
+  <script src="https://kit.fontawesome.com/c856a51426.js" crossorigin="anonymous"></script>
+  <!-- font style -->
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
 
-        .primary-color{
-            color: rgb(171, 239, 95);
-        }
-        .bg-primary-color{
-            background-color: rgb(171, 239, 95);
-        }
-     }
-     </style>
+      .primary-color {
+        color: rgb(171, 239, 95);
+      }
+
+      .bg-primary-color {
+        background-color: rgb(171, 239, 95);
+      }
+    }
+  </style>
 </head>
+
 <body class="manrope-font ">
-    <!-- header -->
-     <header class="bg-gradient-to-b from-gray-200 to-white-50 ">
-        <!-- navbar -->
-         <nav class="container mx-auto">
-            <div class="navbar flex justify-between">
-                <div class="navbar-start">
-                  <!-- icon -->
-                  <div class="flex justify-between items-center gap-2 ">
-                    <div class="rounded-full bg-primary-color w-8 h-8 -rotate-45 text-lg flex justify-center items-center"><i class="fa-solid fa-arrow-right"></i></div>
-                    <div><a class="text-3xl font-light ">Rinterio</a></div>
+  <!-- header -->
+  <header class="bg-gradient-to-b from-gray-200 to-white-50 ">
+    <!-- navbar -->
+    <nav class="container mx-auto ">
+      <div class="navbar flex justify-between">
+        <div class="navbar-start">
+          <!-- icon -->
+          <div class="flex justify-between items-center gap-2 ">
+            <div class="rounded-full bg-primary-color w-8 h-8 -rotate-45 text-lg flex justify-center items-center"><i
+                class="fa-solid fa-arrow-right"></i></div>
+            <div><a class="text-3xl font-light ">Rinterio</a></div>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="gap-6 menu-horizontal px-1">
+            <li class="text-[#737373] font-extralight"><a>Home</a></li>
+            <li class="text-[#737373] font-extralight"><a>Services</a></li>
+            <li class="text-[#737373] font-extralight"><a>Portfolio</a></li>
+            <li class="text-[#737373] font-extralight"><a>Blogs</a></li>
+            <li class="text-[#737373] font-extralight"><a>Contact Us</a></li>
+            <li>
+          </ul>
+        </div>
+        <div class="hidden lg:flex navbar-end gap-3">
+          <div>
+            <div class="rounded-full bg-white w-10 h-10 text-lg flex justify-center items-center"><i
+                class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+          <div>
+            <div class="rounded-full bg-white w-10 h-10 text-lg flex justify-center items-center"><i
+                class="fa-solid fa-cart-shopping"></i></div>
+          </div>
+          <div>
+            <button class="w-52 h-11 bg-primary-color rounded-3xl">
+              <div class="flex justify-around items-center ">
+                <div class="flex justify-center items-center">Book Consult
+                </div>
+                <div
+                  class="rounded-full bg-black w-8 h-8 -rotate-45 text-lg text-white flex justify-center items-center">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class=" bg-white border rounded-full text-3xl h-12 w-12 justify-center items-center lg:hidden">
+          <div class="p-2">
+            <i class="fa-solid fa-list-ul"></i>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- banner section-->
+    <section class="container mx-auto lg:mt-8">
+      <div>
+        <div class="hero my-2 lg:my-5">
+          <div class="hero-content text-neutral-content text-center text-black">
+            <div>
+              <img class="mx-auto" src="./assets/banner.png" alt="">
+              <h1 class="mb-5 text-3xl lg:text-5xl font-light text-center w-11/12 lg:w-3/4 mx-auto" lg:style="line-height: 60px;">A barn house of this design has a striking appearance</h1>
+              <p class="mb-5 lg:w-3/4 mx-auto text-[#494949] font-extralight">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              </p>
+              <button class="w-4/5 lg:w-52 h-11 bg-primary-color rounded-3xl">
+                <div class="flex pl-24 lg:pl-0 gap-3 lg:gap-0 lg:justify-around lg:items-center ">
+                  <div class="flex justify-center items-center text-gray-700 font-extralight">View Details
+                  </div>
+                  <div
+                    class="rounded-full bg-[#85de1f] w-8 h-8 -rotate-45 text-lg text-black flex justify-center items-center">
+                    <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="gap-6 menu-horizontal px-1">
-                    <li class="text-[#737373] font-extralight"><a>Home</a></li>
-                    <li class="text-[#737373] font-extralight"><a>Services</a></li>
-                    <li class="text-[#737373] font-extralight"><a>Portfolio</a></li>
-                    <li class="text-[#737373] font-extralight"><a>Blogs</a></li>
-                    <li class="text-[#737373] font-extralight"><a>Contact Us</a></li>
-                    <li>
-                  </ul>
-                </div>
-                  <div class="hidden lg:flex navbar-end gap-3">
-                    <div><div class="rounded-full bg-white w-10 h-10 text-lg flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></div></div>
-                    <div><div class="rounded-full bg-white w-10 h-10 text-lg flex justify-center items-center"><i class="fa-solid fa-cart-shopping"></i></div></div>
-                    <div>
-                      <button class="w-52 h-11 bg-primary-color rounded-3xl">
-                          <div class="flex justify-around items-center ">
-                              <div class="flex justify-center items-center">Book Consult
-                              </div>
-                              <div class="rounded-full bg-black w-8 h-8 -rotate-45 text-lg text-white flex justify-center items-center"><i class="fa-solid fa-arrow-right"></i>
-                              </div>
-                      </div>
-                      </button>
-                    </div>
-                  </div>
-                  <div class=" bg-white border rounded-full text-3xl h-12 w-12 justify-center items-center lg:hidden">
-                    <div class="p-2">
-                      <i class="fa-solid fa-list-ul"></i>
-                    </div>
-                  </div>
+              </button>
             </div>
-            
-         </nav>
-     </header>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
 
-     <!-- main -->
-      <main>
+  <!-- main -->
+  <main>
 
-      </main>
+  </main>
 
-      <!-- footer -->
-       <footer>
+  <!-- footer -->
+  <footer>
 
-       </footer>
+  </footer>
 </body>
+
 </html>
